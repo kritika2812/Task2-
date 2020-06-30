@@ -1,0 +1,16 @@
+JOB 1: After setup of jenkins in local system , create a new item in which jenkins automatically pull repo from  Github Repo just by giving some triggers.
+Go to configure , In source code management click on github and paste the url of your github . Then in build shell paste the following code:
+sudo cp -rvf * /lwweb1   #(lwweb1 is the same workspace that you created in rhel 8)
+
+
+JOB 2:
+this job should automatically detect your code and launch the respective code interpreter and launch the container for the same.
+
+JOB 3:
+This is just the simple testing job that checks the other jobs that are they working fine or not.
+
+JOB 4:
+Job4 will directly send a build failure message to the developer if system failure occurs.
+
+JOB 5:
+This job will work in monitor the system, Like if the system fails then it will automatically start a new container to don't make a failure in the project.
