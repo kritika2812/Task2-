@@ -17,5 +17,5 @@ CMD java -jar /usr/lib/jenkins/jenkins.war
 
 
 
-
+We will create an image by using the above Dockerfile named as newimage:v1
 
